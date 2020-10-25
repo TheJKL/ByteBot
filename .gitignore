@@ -2,6 +2,7 @@
 *~
 config.json
 sounds/
+*.template
 
 # Logs
 logs
