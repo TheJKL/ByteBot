@@ -1,0 +1,19 @@
+{
+  "name": "bytebot",
+  "version": "1.0.0",
+  "description": "Discord Soundbyte Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJKL/ByteBot.git"
+  },
+  "author": "VanJackal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheJKL/ByteBot/issues"
+  },
+  "homepage": "https://github.com/TheJKL/ByteBot#readme"
+}
