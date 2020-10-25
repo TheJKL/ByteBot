@@ -15,3 +15,4 @@ A Discord bot for storing and sending sound bytes to a channel.
 ## Possible Features:
 - Web interface for uploads/downloads (and maybe even basic sound editing)
 - Replay buffer, record last 15 seconds in a channel (allow it to be edited by a user)
+- video cllip playback through streams
