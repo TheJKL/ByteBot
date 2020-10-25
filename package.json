@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TheJKL/ByteBot/issues"
   },
-  "homepage": "https://github.com/TheJKL/ByteBot#readme"
+  "homepage": "https://github.com/TheJKL/ByteBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
 }
