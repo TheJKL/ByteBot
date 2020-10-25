@@ -11,6 +11,7 @@ A Discord bot for storing and sending sound bytes to a channel.
 - list stored current sounds in server (or personal) and show indexes
 - play random sounds
 - automatic stripping of audio from video files (ease of use)
+- youtube compatability
 
 ## Possible Features:
 - Web interface for uploads/downloads (and maybe even basic sound editing)
