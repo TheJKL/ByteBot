@@ -1,7 +1,8 @@
-# Vim
+# App Specific
 *~
-# Config
 config.json
+sounds/
+
 # Logs
 logs
 *.log
