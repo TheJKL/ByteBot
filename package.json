@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/TheJKL/ByteBot#readme",
   "dependencies": {
+    "@discordjs/node-pre-gyp": "^0.1.0",
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.4.1",
     "ffmpeg-static": "^4.2.7"
   }

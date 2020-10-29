@@ -3,6 +3,7 @@
 config.json
 sounds/
 *.template
+*.swp
 
 # Logs
 logs
