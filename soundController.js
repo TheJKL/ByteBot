@@ -10,16 +10,29 @@ module.exports = {
 			const args = message.content.slice(prefix.length).trim().split(/ +/);
 			const command = args.shift().toLowerCase();
 
+			const inUserChannel = message.member.voice.channel == message.guild.voice.channel;
+
 			switch(command) {
 				case "play":
-					connection.play('./sounds/Bundy.wav');
-					console.log('SoundCon Play');
+					if (inUserChannel){
+						connection.play('./sounds/Bundy.wav');
+						console.log('SoundCon Play');
+					} else {
+						message.channel.send('You must be in vc with the bot.')
+					}
 					break;
 				case "leave":
-					message.guild.voice.channel.leave();
+					if (inUserChannel){
+						message.guild.voice.channel.leave();
+						console.log('soundCon Leave');
+					} else {
+						message.channel.send('You must be in vc with the bot.')
+					}
 				default:
 					break;
 			}
 		});
 	}
 }
+
+
