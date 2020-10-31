@@ -2,6 +2,7 @@ const prefix = require('./config.json').prefix;
 
 module.exports = {
 	async execute(message,args,connection) {
+		console.log('SoundCon Execute');
 		const client = message.client;
 
 		client.on('message', message => {
@@ -12,7 +13,10 @@ module.exports = {
 			switch(command) {
 				case "play":
 					connection.play('./sounds/Bundy.wav');
+					console.log('SoundCon Play');
 					break;
+				case "leave":
+					message.guild.voice.channel.leave();
 				default:
 					break;
 			}
