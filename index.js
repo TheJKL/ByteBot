@@ -1,6 +1,10 @@
 const fs = require('fs');
 const Discord = require("discord.js");
-const { prefix, token } = require('./config.json');
+const { prefix, token, mongoURL } = require('./config.json');
+
+const MongoClient = require('mongodb').MongoClient;
+const mongoClient = new MongoClient(mongoURL);
+exports.mongoClient = mongoClient;
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
