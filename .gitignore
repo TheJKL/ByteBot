@@ -4,6 +4,7 @@ config.json
 sounds/
 *.template
 *.swp
+temp/
 
 # Logs
 logs
