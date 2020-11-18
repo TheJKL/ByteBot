@@ -1,3 +1,5 @@
+__Restructure Branch__
+
 # ByteBot
 A Discord bot for storing and sending sound bytes to a channel.
 
