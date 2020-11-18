@@ -1,11 +1,12 @@
 const fs = require('fs');
 const http = require('http');
 const fileExts = require('../config.json').fileExts;
+const mongoCon = require('../mongoCon.js');
 
 module.exports = {
 	name: 'upload',
 	description: 'upload the attached sound file',
-	execute(message,args) {
+	async execute(message,args) {
 		if(!message.attachments.first()) {
 			message.channel.send('No file to upload');
 			return;
@@ -35,6 +36,7 @@ module.exports = {
 		nameWords.forEach(word => {
 			soundname += "-" + word
 		})
-		message.channel.send(soundname);
+
+		soundname = await mongoCon.getName((soundname) => message.channel.send(soundname)); 
 	},
 };
